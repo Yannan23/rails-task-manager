@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+.task-details {
+  background-color: rgba(216, 216, 212, 0.513);
+  display: flex;
+  height: 80px;
+  width: 800px;
+  padding: 16px 16px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.back_to_list {
+  height: 40px;
+  border-top: gray;
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-baseline">
+    <h1><%= @task.title %></h1>
+
+    <div>
+      <%= link_to "📝 Edit this task", edit_task_path %>
+    </div>
+  </div>
+
+
+  <div class="task-details">
+    <%= @task.details %>
+  </div>
+
+  <%= check_box_tag 'task_completed', '1', @task.completed, disabled: true %>
+  <%= label_tag 'task_completed', 'Completed' %>
+
+  <div class="back_to_list">
+    <%= link_to "Back to list", tasks_path %>
+  </div>
+
+</div>
